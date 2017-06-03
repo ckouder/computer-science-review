@@ -1,16 +1,4 @@
-## At the beginning
-
-In this document, there're some special characters in order to simplify the notes taken, I write them down in the list below:
-
-* \(abc\) =&gt; the number of abc
-* \(v\)abc =&gt; decrease of abc
-* \(^\)abc =&gt; increase of abc
-* \(2\) =&gt; binary expression of a number
-* \(10\) =&gt; decimal expression of a number
-* \(16\) =&gt; hexadecimal expression of a number
-* a '=&gt;' b =&gt; a means b
-
-# 1.01 Number System
+## 1.01 Number System
 
 ### three ways to represent numbers:
 
@@ -64,7 +52,7 @@ In this document, there're some special characters in order to simplify the note
       ```
 
       _thoughts:_  
-      \*BCD can be used in: calculators, electronic temperature measurement,   
+      \*BCD can be used in: calculators, electronic temperature measurement,  
       electronic clock, weight\*
 
 ---
@@ -86,6 +74,7 @@ In this document, there're some special characters in order to simplify the note
       **Why produced??**
 
 * ASCII code is inadequate
+
 * able to represent any possible text in code form
 * two bytes representations: 11?????? 1???????
 * _avoid misinterpretation with the ASCII code_
