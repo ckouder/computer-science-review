@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [chapter1](chapter1.md)
+* [Number System](chapter1.md)
 

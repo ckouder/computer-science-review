@@ -93,6 +93,7 @@
 * able to represent any possible text in code form
 
 * two bytes representations: 11?????? 1???????
+
 * _avoid misinterpretation with the ASCII code_
 
   _thoughts: difference in these two codes_  
