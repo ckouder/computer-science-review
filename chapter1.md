@@ -9,8 +9,23 @@
 ### how to convert?
 
 * \(10\)101 = \(2\)01100101
+  * 101 - 2^7 = - 27   &lt; 0   =&gt; 0
+  * 101 - 2^6 = 37     &gt; 0   =&gt; 1
+  * 37 - 2^5   = 5       &gt; 0    =&gt; 1
+  * 5 - 2^4     = - 11   &lt; 0    =&gt; 0
+  * 5 - 2^3     = - 3     &lt; 0    =&gt; 0
+  * 5 - 2^2     = 1       &gt; 0    =&gt; 1
+  * 1 - 2^1     = -1      &lt; 0    =&gt; 0
+  * 1 - 2^0     = 0                =&gt; 1
 * \(10\)101 = \(16\)0x65
+  * \(10\)101 =&gt; \(2\)01100101
+  * \(2\)0110 =&gt; \(16\)6
+  * \(2\)0101 =&gt; \(16\)5
+  * \(10\)101 = \(16\)0x65
 * \(2\)10100101 = \(16\)0xA5
+  * \(2\)1010 =&gt; \(16\)A
+  * \(2\)0101 =&gt; \(16\)5
+  * \(2\)10100101 = \(16\)0xA5
 
 ---
 
@@ -76,6 +91,7 @@
 * ASCII code is inadequate
 
 * able to represent any possible text in code form
+
 * two bytes representations: 11?????? 1???????
 * _avoid misinterpretation with the ASCII code_
 
@@ -94,7 +110,7 @@
 
   * _Circle: the position of the center and radius_
   * _Additional properties: stroke color and thickness_
-  * \*\[this is scaleable!!\]
+  * \*\[this is scale-able!!\]
   * **Dimensions of the objects are defined relative to an imaginary drawing canvas not xplicitly**
   * **Appropriate calculations to make the file in a suitable size, if user ask to resize it, it will re-calculate and form a new image**
     ### Bitmap
@@ -109,10 +125,10 @@
     * 8-bits: basic color
   * resolutions of the image: \#\(pixel per row\) \* \#\(row\)
   * **there're difference between \(resolutions of image stored\) & \(resolutions of monitor screens\)**
-  * scaleable but the total pixels don't change
+  * scale-able but the total pixels don't change
   * size:
   * vector graphics &lt; bitmap
-  * size of bitmap = difinations of resolutions + the content
+  * size of bitmap = definitions of resolutions + the content
   * calculating minimum file size: resolutions of picture \* color depth
     * _1366 _ 768 _ 24 = 25,178,112 bits_
 
@@ -164,7 +180,9 @@ _cut, merge the audio files and store them in a different format form_
 
 * video becomes fluent at least 50 fps in human eyes
 * 25 fps to form continuous motion
-  ### solutions against the above problems:
+
+### solutions against the above situations:
+
 * interlaced coding
   * split each frames into 2 half: odd lines & even lines then display half by half
   * high refresh rate but halving the transmission bandwidth requirements
@@ -182,7 +200,7 @@ _cut, merge the audio files and store them in a different format form_
 
 ### lossless compression:
 
-* **DEFINITION: coding techniques that allow subsequent decoding ro recreate exactly the original file**
+* **DEFINITION: coding techniques that allow subsequent decoding to recreate exactly the original file**
 * \(v\)file size \(=\)information
 * process can be reversed to re-create the original file
   * _Huffman coding for text: find the most used letters and use several bits to substitutes them_
@@ -197,11 +215,11 @@ _cut, merge the audio files and store them in a different format form_
 * process can't be reversed and the original file can never be recovered
   * _remove some details in the image file and sound files which human cannot detect_
   * _reduce color depth for the bitmap_
-    * compressions for videos:
+    * compression for videos:
 * tackle the temporal redundancy: trace the changes in adjacent frames
-* **Sound and Video are handled independently but must ensure the synchronisation**
+* **Sound and Video are handled independently but must ensure the synchronization**
 
-  * multimedia container format: onw video match one sound file
+  * multimedia container format: one video match one sound file
 
   _thoughts: _[_Huffman's code_](https://en.wikipedia.org/wiki/Huffman_coding)
 
