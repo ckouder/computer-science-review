@@ -4,8 +4,6 @@ This book is not for substituting the textbook, it's a information compression o
 
 In this document, there're some special characters in order to simplify the notes taken, I write them down in the list below:
 
-In this document, there're some special characters in order to simplify the notes taken, I write them down in the list below:
-
 * \(abc\) =&gt; the number of abc
 * \(v\)abc =&gt; decrease of abc
 * \(^\)abc =&gt; increase of abc
